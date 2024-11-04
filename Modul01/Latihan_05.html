@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 5</title>
+</head>
+<body>
+    <form action="submit_form.php" method="POST">
+        <fieldset>
+            <legend>Formulir Data Diri</legend>
+            <table>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama_lengkap" id="nama_lengkap" required></td>
+                </tr>
+                <tr>
+                    <td>Tempat Lahir</td>
+                    <td>:</td>
+                    <td><input type="text" name="tempat_lahir" id="tempat_lahir" required></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input type="date" name="tanggal_lahir" id="tanggal_lahir" required></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jenis_kelamin" value="laki-laki" id="laki-laki" required>
+                        <label for="laki-laki">Laki-laki</label>
+                        <input type="radio" name="jenis_kelamin" value="perempuan" id="perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td><textarea name="alamat" id="alamat" cols="22" rows="3" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td>No HP</td>
+                    <td>:</td>
+                    <td><input type="tel" name="no_hp" id="no_hp" pattern="[0-9]{10,13}" placeholder="08123456789" required></td>
+                </tr>
+                <tr>
+                    <td>Kota</td>
+                    <td>:</td>
+                    <td>
+                        <select name="kota" id="kota" required>
+                            <option value="" disabled selected>--Pilih Kota--</option>
+                            <option value="Bogor">Bogor</option>
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Bekasi">Bekasi</option>
+                            <option value="Tangerang">Tangerang</option>
+                            <option value="Depok">Depok</option>
+                            <option value="Cikarang">Cikarang</option>
+                            <option value="Kuningan">Kuningan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center;">
+                        <button type="submit">Kirim</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
